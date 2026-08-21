@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Campus Second Hand</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--
+        注意：EncodingFilter / AuthFilter / ActionServlet / CaptchaServlet 均已通过
+        @WebFilter / @WebServlet 注解声明（web-app 默认开启注解扫描，metadata-complete
+        未设为 true），此处无需重复声明，否则过滤器会被注册两次、每个请求执行两遍。
+    -->
+</web-app>
